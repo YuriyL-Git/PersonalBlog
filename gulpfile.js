@@ -94,7 +94,11 @@ function css(cb) {
         .pipe(autoprefixer({
             cascade: true
         }))
-        .pipe(cssbeautify())
+        .pipe(cssbeautify({
+            indent: '  ',
+            openbrace: 'end-of-line',
+            autosemicolon: true
+        }))
         .pipe(dest(path.build.css))
         .pipe(cssnano({
             zindex: false,
