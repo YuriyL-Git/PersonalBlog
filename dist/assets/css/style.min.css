@@ -345,7 +345,7 @@ body {
 .header {
   background-color: greenyellow;
   height: 3rem;
-  width: calc(100% - 40rem);
+  width: calc(100% - 30rem);
   position: fixed;
   top: 0;
   right: 0;
@@ -353,7 +353,7 @@ body {
 
 .sidebar {
   background-color: #202020;
-  width: 40rem;
+  width: 30rem;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -362,7 +362,7 @@ body {
   box-shadow: 5px 0 15px rgba(5, 5, 5, 0.1); }
 
 .sidebar__header {
-  width: 40rem;
+  width: 30rem;
   background-color: #121212; }
   .sidebar__header img {
     display: block;
@@ -370,9 +370,18 @@ body {
     height: 100%;
     object-fit: cover; }
 
+.sidebar__content {
+  padding: 0 2rem;
+  margin-top: -5rem; }
+
+.sidebar__footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2rem; }
+
 .main {
   padding-top: 10rem;
-  padding-left: 40rem; }
+  padding-left: 30rem; }
 
 .container {
   max-width: 70rem;
@@ -395,7 +404,46 @@ body {
   text-align: center; }
 
 .profile__prof {
+  margin-bottom: 2rem;
   font-size: 1.4rem;
   font-weight: 300;
   text-align: center;
   color: #dedede; }
+
+.profile__text {
+  padding: 3em 0;
+  margin: 3rem 0;
+  font-size: 1.2rem;
+  text-align: center;
+  border-top: 1px solid #1c1c1c;
+  border-bottom: 1px solid #1c1c1c; }
+
+.social {
+  display: flex;
+  justify-content: center; }
+
+.social__item {
+  margin: 0 .75rem; }
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: inherit;
+  line-height: 1.1;
+  color: #fff;
+  background: #121212;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 1.12em 2.1em;
+  border-radius: 3em; }
+  .btn--red {
+    background-color: #ED3024; }
+    .btn--red:hover {
+      background-color: #cd1c11; }
+  .btn--blue {
+    background-color: #3137C9; }
+    .btn--blue:hover {
+      background-color: #272ca0; }

@@ -1,0 +1,37 @@
+@import "../vars";
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: inherit;
+  line-height: 1.1;
+  color: $white;
+
+  background: $secondary;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 1.12em 2.1em;
+
+  border-radius: 3em;
+
+  &--red {
+    background-color: $red;
+
+    &:hover {
+      background-color: darken($red, 10%);
+    }
+  }
+
+  &--blue {
+    background-color: $blue;
+
+    &:hover {
+      background-color: darken($blue, 10%);
+    }
+  }
+}
+

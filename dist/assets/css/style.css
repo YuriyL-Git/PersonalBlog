@@ -368,6 +368,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.4rem;
   color: #fff;
+  line-height: 1.5;
 }
 
 *,
@@ -384,7 +385,7 @@ body {
 .header {
   background-color: greenyellow;
   height: 3rem;
-  width: calc(100% - 40rem);
+  width: calc(100% - 30rem);
   position: fixed;
   top: 0;
   right: 0;
@@ -392,18 +393,36 @@ body {
 }
 
 .sidebar {
-  background-color: orange;
-  width: 40rem;
+  background-color: #202020;
+  width: 30rem;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
+  box-shadow: 5px 0 15px rgba(5, 5, 5, 0.1);
+}
+
+.sidebar__header {
+  width: 30rem;
+  background-color: #121212;
+}
+
+.sidebar__header img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.sidebar__content {
+  padding: 0 2rem;
 }
 
 .main {
   padding-top: 10rem;
-  padding-left: 40rem;
+  padding-left: 30rem;
 }
 
 .container {
@@ -411,4 +430,54 @@ body {
   margin: 0 auto;
   padding-left: 5rem;
   padding-right: 5rem;
+}
+
+.profile__avatar {
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  border: 2px solid #fff;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  margin: 0 auto 3rem;
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+.profile__name {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.profile__prof {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-align: center;
+  color: #dedede;
+}
+
+.profile__text {
+  padding: 3em 0;
+  margin: 3rem 0;
+  font-size: 1.2rem;
+  text-align: center;
+  border-top: 1px solid #1c1c1c;
+  border-bottom: 1px solid #1c1c1c;
+}
+
+.social {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.social__item {
+  margin: 0 .75rem;
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
 }
