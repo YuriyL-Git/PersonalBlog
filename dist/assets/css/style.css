@@ -383,13 +383,30 @@ body {
 }
 
 .header {
-  background-color: greenyellow;
-  height: 3rem;
+  background-color: #0d0d0d;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.25);
   width: calc(100% - 30rem);
   position: fixed;
   top: 0;
   right: 0;
   z-index: 1000;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__left {
+  width: 60%;
+  background-color: orange;
+}
+
+.header__right {
+  background-color: green;
+  width: 40%;
+}
+
+.nav__list {
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .sidebar {
@@ -418,6 +435,15 @@ body {
 
 .sidebar__content {
   padding: 0 2rem;
+  margin-top: -5rem;
+}
+
+.sidebar__footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 2rem;
 }
 
 .main {
@@ -480,4 +506,31 @@ body {
 .btn {
   display: inline-block;
   vertical-align: top;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: inherit;
+  line-height: 1.1;
+  color: #fff;
+  background: #121212;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 1.12em 2.1em;
+  border-radius: 3em;
+}
+
+.btn--red {
+  background-color: #ED3024;
+}
+
+.btn--red:hover {
+  background-color: #cd1c11;
+}
+
+.btn--blue {
+  background-color: #3137C9;
+}
+
+.btn--blue:hover {
+  background-color: #272ca0;
 }

@@ -343,13 +343,38 @@ body {
   overflow: hidden; }
 
 .header {
-  background-color: greenyellow;
-  height: 3rem;
+  background-color: #0d0d0d;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.25);
   width: calc(100% - 30rem);
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1000; }
+  z-index: 1000;
+  display: flex; }
+
+.header__left {
+  width: 60%;
+  background-color: #202020; }
+
+.header__right {
+  display: flex;
+  background-color: green;
+  width: 40%;
+  justify-content: flex-end; }
+
+.nav__list {
+  display: flex; }
+
+.nav__link {
+  text-decoration: none;
+  padding: 1rem 1rem;
+  display: block;
+  font-size: 1.1rem;
+  color: #fff;
+  text-transform: uppercase;
+  transition: background-color .2s linear; }
+  .nav__link:hover {
+    background-color: #3137C9; }
 
 .sidebar {
   background-color: #202020;

@@ -1,0 +1,23 @@
+@import "../vars";
+
+.nav {
+  &__list {
+    display: flex;
+  }
+
+  &__link {
+    text-decoration: none;
+    padding: 1rem 1rem;
+    display: block;
+    font-size: 1.1rem;
+    color: $white;
+    text-transform: uppercase;
+    transition: background-color .2s linear;
+
+    &:hover {
+      background-color: $blue;
+    }
+  }
+}
+
+
